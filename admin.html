@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - SNPSU Kiosk</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <div class="app-container" style="display: block; overflow-y: auto;">
+        <header class="main-header">
+            <div class="logo">
+                <img src="images/snpsu.png" alt="SNPSU Logo" class="logo-img">
+                <div class="logo-text">Admin Dashboard</div>
+            </div>
+            <div class="header-actions">
+                <a href="index.html" class="header-cart-btn" style="text-decoration: none;">
+                    <i class="fas fa-store"></i> Back to Kiosk
+                </a>
+            </div>
+        </header>
+
+        <main class="main-content" style="max-width: 1200px; margin: 70px auto 0;">
+            <h2 class="section-title">
+                <i class="fas fa-clipboard-list"></i> Recent Orders
+            </h2>
+            <div class="orders-grid" id="ordersGrid">
+                <!-- Orders will be injected here via JavaScript -->
+            </div>
+        </main>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
